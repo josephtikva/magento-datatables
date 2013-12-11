@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Arosavd_Datatables>
+      <version>0.1.0</version>
+    </Arosavd_Datatables>
+  </modules>
+  <global>
+    <helpers>
+      <datatables>
+        <class>Arosavd_Datatables_Helper</class>
+      </datatables>
+    </helpers>
+  </global>
+</config> 
