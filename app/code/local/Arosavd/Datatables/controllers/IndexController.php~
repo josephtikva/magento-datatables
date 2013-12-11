@@ -20,11 +20,8 @@ class Arosavd_Datatables_TodoController extends Mage_Core_Controller_Front_Actio
                 $rows[] = $data;
             }
         }
-        $data = array(
-            'aaData'=>$rows
-        );
-        $data = array_merge($data, $collectionValues);
-        echo json_encode($data);
+        $returnValues['aaData']=>$rows;
+        echo json_encode($returnValues);
 
     }
 }

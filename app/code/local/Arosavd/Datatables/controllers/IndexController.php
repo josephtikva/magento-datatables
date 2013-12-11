@@ -8,7 +8,8 @@ class Arosavd_Datatables_TodoController extends Mage_Core_Controller_Front_Actio
         $collection = Mage::getModel('{somemodel}')
 			->getCollection()
 			->applyFiltersFromParams($params);
-        //you can add a custom filter here
+ 
+       //you can add a custom filter here
 	//$collection->addFieldToFilter('string {field}', '{array $condition}'
 
 	$returnValues = $collection->getReturnValues();
