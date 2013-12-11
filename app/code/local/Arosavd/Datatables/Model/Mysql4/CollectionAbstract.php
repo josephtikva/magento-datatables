@@ -13,6 +13,13 @@
             return $this;
         }
 
+        public function getReturnValues(){
+            //set the total records after applying the filter
+            $this->setTotal('iTotalDisplayRecords');
+
+            $this->returnValues['sEcho'] = (int)$this->params['sEcho'];
+            return $this->returnValues;
+        }
 
         protected function setupFields(){
                $params = $this->params;
@@ -75,13 +82,6 @@
             return $this;
         }
 
-        protected function getReturnValues(){
-            //set the total records after applying the filter
-            $this->setTotal('iTotalDisplayRecords');
-
-            $this->returnValues['sEcho'] = (int)$this->params['sEcho'];
-            return $this->returnValues;
-        }
 		
 
     }
