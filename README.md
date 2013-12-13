@@ -1,8 +1,8 @@
 Datatables server side code for Magento.
 
-Supports search, pagination, filtering(global and multi-colum), sorting(multi-column), 
+Supports search, pagination, filtering(global and multi-column), sorting(multi-column), 
 
-Roadmap: To Support EAV collections
+Roadmap: To Support EAV collections, Regex Filtering
 
 Usage:
 
